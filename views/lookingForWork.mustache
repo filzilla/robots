@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel ="stylesheet" href = "./styles.css"/>
+</head>
+<body>
+    <header class="header">
+        <a class ="navigation"href ="/">Home</a>
+        <a class ="navigation" href = "./employed">Employed</a>
+        <a class ="navigation" href ="./lookingForWork">Available For Hire</a>
+    </header>
+
+
+<div class = "robot-container">
+
+    {{#user}}
+    
+    <div  class = "robot-cards">
+        <img class = "robot-image" src = {{avatar}} alt= "image of robot">
+ 
+        </img>
+
+        <span><a class = 'name link' href = {{id}}  >{{name}}</a></span>
+
+        <div class = 'address-job'>
+            {{#job}}<p>{{job}}, {{company}}</p>{{/job}}
+             {{^job}}<p class ='job-hunt'>Available for Hire </p>{{/job}}
+       
+
+         </div>
+   
+
+   
+
+
+     
+    </div>
+
+{{/user}}
+</div> 
+</body>
+</html>

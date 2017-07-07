@@ -1,0 +1,104 @@
+body{
+    font-family: 'arial';  
+}
+.robot-container{
+      margin: 10px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      flex-basis: 100%;
+      justify-content: flex-start;
+}
+.robot-cards{
+    border: 2px solid #EEEEEE;
+    margin: 1%;
+    flex-basis: 18%; 
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 2%;
+}
+.job-hunt{
+    color: #C0392B;
+    margin-left: 3px;
+}
+.address-container{
+    display: flex;
+    flex-basis: 100%;
+    flex-wrap: wrap;
+    justify-content: flex-start
+}
+.robot-image{
+    align-items: center;
+    margin: auto;
+}
+.name{
+    display: flex;
+    flex-basis: 100%;
+    text-align: left;
+    font-size: 1.5em;
+    color: #3498DB;
+    font-weight: 400;
+}
+.label{
+    font-weight: 600;
+    font-size: 1.1em;
+}
+.address-job{
+    text-align: center;
+}
+.card-image{
+    border: 2px solid lightgrey;
+    border-radius: 50%;
+    width:55%;
+    padding: 1%;
+}
+.robot-card-container{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      flex-basis: 100%;
+      justify-content: center;
+      margin: 150px ;
+}
+.image-box{
+    flex-basis: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+.name-container{
+    display: flex;
+    flex-basis: 50%;
+    flex-direction: column;
+    margin-bottom: 40px;   
+}
+.name-two{
+    display: flex;
+    flex-basis: 100%;
+    text-align: left;
+    font-size: 3.5em;
+    color: #000000;
+    font-weight: 400;
+    padding-top: 80px;
+}
+.education-container{
+    margin-top: 50px;
+}
+.skills{
+       margin-top: 20px;
+}
+.header{
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 100%;
+    justify-content: space-between;
+}
+.navigation{
+    text-align: center;
+    padding: 5%;
+    font-size: 1.5em;
+    color: #1E824C;
+    margin-left: 80px;
+    margin-right:80px;
+    margin-bottom: 20px;
+}

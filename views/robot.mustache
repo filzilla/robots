@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel ="stylesheet" href = "./styles.css"/>
+</head>
+<body>
+<header class="header">
+        <a class ="navigation"href ="./index">Home</a>
+        <a class ="navigation" href = "./employed">Employed</a>
+        <a class ="navigation" href ="./lookingForWork">Available For Hire</a>
+    </header>
+
+{{#user}}
+<div class = "robot-card-container">
+    {{#id}}
+    <div class = "image-box">
+    <img class = "robot-image card-image" src = {{avatar}}>
+
+    </img>
+    </div>
+    <div class ="name-container">
+     <div class = 'name-two'>
+         {{name}}
+        </div>
+
+        <div class="address-container">
+            {{#address.city}} <p>
+         {{address.city}}, {{address.country}} | </p><p>  {{#job}} {{job}}, {{company}} {{/job}} </p><p class="job-hunt">{{^job}}  Looking for Work{{/job}}</p>
+        </p>{{/address.city}}
+            {{^address.city}} <p>
+        {{address.country}} | {{job}}, {{company}}
+        </p>{{/address.city}}
+       
+        </div>
+    
+        <div>
+        {{email}} | {{phone}}
+        </div>
+    </div>
+    <div class ="education-container">
+  {{#university}}
+     <div class = "education label">
+
+            Education:
+
+    </div>   
+         
+        <div>
+            {{university}}  
+    </div>{{/university}}
+{{^university}}
+     <div class = "education noDisplay">
+     
+    </div>{{/university}}
+
+    <div class = 'skills label'>
+            Skills:
+    </div>
+    <div>
+            {{skills}}  
+    </div>
+
+
+     {{/id}}
+     {{/user}}
+</div> 
+</body>
+</html>
